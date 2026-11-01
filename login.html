@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#060912">
+  <title>Dropmail — sign in</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div><div class="ambient ambient-c"></div>
+  <main class="login-shell">
+    <form class="login-card glass-panel" id="login-form" autocomplete="on">
+      <a class="brand login-brand" href="/login">
+        <span class="brand-mark">D</span>
+        <span>dropmail<span class="brand-dot">.</span></span>
+      </a>
+      <div class="login-kicker">SIGN IN</div>
+      <h1 class="login-title">Enter your password</h1>
+      <p class="login-sub">This Dropmail instance is private. Authenticate to access your inboxes.</p>
+      <label class="login-field">
+        <span class="section-kicker">PASSWORD</span>
+        <input type="password" id="password" name="password" class="login-input" placeholder="Your access password" autocomplete="current-password" autofocus required>
+      </label>
+      <div id="login-error" class="login-error hidden" role="alert"></div>
+      <button type="submit" id="login-btn" class="primary-btn login-btn">
+        <span id="login-btn-text">Sign in</span><span class="btn-arrow">↗</span>
+      </button>
+      <div class="login-foot">DROPMAIL LOCAL · PRIVATE INSTANCE</div>
+    </form>
+  </main>
+  <script src="/login.js" defer></script>
+</body>
+</html>

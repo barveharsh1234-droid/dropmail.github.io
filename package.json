@@ -1,0 +1,10 @@
+{
+  "name": "dropmail-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local disposable inbox dashboard powered by the Mail.tm API",
+  "main": "server.js",
+  "scripts": {"start": "node server.js"},
+  "engines": {"node": ">=20"},
+  "dependencies": {"express": "^4.21.2", "helmet": "^8.0.0"}
+}

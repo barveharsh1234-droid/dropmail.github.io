@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#060912">
+  <title>Dropmail — disposable inbox</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div><div class="ambient ambient-c"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">D</span><span>dropmail<span class="brand-dot">.</span></span></a>
+    <div class="top-status"><span class="pulse"></span><span>LOCAL SESSION</span><span class="divider"></span><span id="provider-label">MAIL.TM CONNECTED</span><span class="divider"></span><button id="logout-btn" class="logout-btn hidden" title="Sign out">Sign out</button></div>
+  </header>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span> PRIVATE TEMPORARY INBOXES</div>
+      <h1>Your inbox.<br><span>On your terms.</span></h1>
+      <p class="hero-copy">Create a disposable address and receive real incoming email. Persistent by default — stays until you end it. No signup. No mailbox to maintain.</p>
+      <div class="hero-actions">
+        <button id="create-btn" class="primary-btn"><span class="plus">＋</span><span id="create-label">Generate an address</span><span class="btn-arrow">↗</span></button>
+        <div class="expiry-note"><span class="clock-icon">◷</span> <span id="expiry-note-text">Inbox expires after <b>30 minutes</b></span></div>
+      </div>
+      <div id="inbox-limit-badge" class="inbox-limit-badge hidden"></div>
+      <div id="notice" class="notice hidden" role="status"></div>
+    </section>
+
+    <section id="workspace" class="workspace hidden">
+      <div class="inbox-head">
+        <div><div class="section-kicker">ACTIVE ADDRESS</div><div class="address-row"><span id="address">—</span><button id="copy-btn" class="icon-btn" title="Copy address">▢</button></div></div>
+        <div class="countdown-wrap"><span class="section-kicker">LIFETIME</span><strong id="countdown">Persistent</strong></div>
+      </div>
+      <div class="inbox-toolbar">
+        <div class="inbox-title"><span class="live-dot"></span><strong>Inbox</strong><span id="message-count" class="count-pill">0</span></div>
+        <div class="toolbar-actions"><span id="last-updated">Waiting for mail</span><button id="refresh-btn" class="secondary-btn">↻ Refresh</button><button id="delete-btn" class="danger-btn">End inbox</button></div>
+      </div>
+      <div class="mail-layout">
+        <div id="message-list" class="message-list">
+          <div class="empty-state"><div class="empty-icon">✉</div><strong>Waiting for your first email</strong><p>Messages sent to this address will appear here automatically.</p><span class="loading-line"></span></div>
+        </div>
+        <article id="message-view" class="message-view">
+          <div class="reader-empty"><div class="reader-icon">↙</div><strong>Select a message</strong><p>Choose an email from the list to read it here.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="welcome-card" class="feature-strip">
+      <div class="feature"><span class="feature-icon">⌁</span><div><b>Real incoming mail</b><small>Powered by an external inbox provider</small></div></div>
+      <div class="feature"><span class="feature-icon">∞</span><div><b>Persistent by default</b><small>Stays until you end it (set TTL_MINUTES to limit)</small></div></div>
+      <div class="feature"><span class="feature-icon">⌘</span><div><b>Local by default</b><small>Runs on this computer only</small></div></div>
+    </section>
+    <footer><span>DROPMAIL LOCAL · BUILD 1.0</span><span>Powered by <a href="https://mail.tm/" target="_blank" rel="noreferrer">Mail.tm</a> · <a href="https://docs.mail.tm/" target="_blank" rel="noreferrer">API documentation</a></span></footer>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

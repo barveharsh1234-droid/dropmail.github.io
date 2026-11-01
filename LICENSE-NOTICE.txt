@@ -1,0 +1,4 @@
+This project is a local client for the third-party Mail.tm API.
+Mail.tm is not affiliated with this project. Mail.tm domains, availability, delivery,
+retention, and API access are controlled by Mail.tm. Attribution is provided in the UI.
+Review the current Mail.tm terms before use: https://docs.mail.tm/
